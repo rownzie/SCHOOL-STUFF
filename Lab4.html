@@ -1,0 +1,46 @@
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ronix Airline Express</title>
+</head>
+	<body style="color: white; margin: 50px; padding: 10px; border: 5px solid white; background-image: url('airplane.jpg');">
+	<h1 style="font-family: cursive; text-align: center; font-size: 25px;">Ronix Airline Express<br>Online Booking<br></h1>
+	<p style="font-family: Lato; font-size: 18px;"><b>Passenger and Flight Details:</b><br></p>
+	<table>
+		<tr>
+			<td>Last Name: </td><td><input type="text" placeholder="" id="ln"><br></td>
+		</tr>
+		<tr>
+			<td>First Name: </td><td><input type="text" placeholder="" id="fn"><br></td>
+		</tr>
+		<tr>
+			<td><label for="g">Gender: </label></td>
+			<td><select id="g"><option value=""></option><option value="m">Male</option><option value="g">Female</option></select><br></td>
+		</tr>
+		<tr>
+			<td>Email Address: </td><td><input type="text" placeholder="" id="email"><br></td>
+		</tr>
+		<tr>
+			<td>Origin: </td><td><input type="text" placeholder="" id="or"><br></td>
+		</tr>
+		<tr>
+			<td>Destination:</td><td> <input type="text" placeholder="" id="des"><br></td>
+		</tr>
+		<tr>
+			<br><form action="/action_page.php">
+			<td><label for="dates">Departure Date: </label></td>
+			<td><input type="date" id="dd" name="dd"></td>
+			</form></td>
+		</tr>
+		<tr>
+			<form action="/action_page.php">
+			<td><label for="dates">Return Date: </label></td>
+			<td><input type="date" id="rd" name="rd"></td>
+			</form></td>
+		</tr>
+	</table>
+
+	<br><button type="button" onclick="airline()">Submit</button><br>
+<script src="Lab4.js"> </script>
+  </body>
+</html>
